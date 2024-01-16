@@ -13,7 +13,11 @@ public class CountryService {
         this.countryRepository = countryRepository;
     }
 
-    public List<Country> findAll() {
-        return countryRepository.findAll();
+    public List<Country> findAllWithMajorCities() {
+        return countryRepository.findAllWithMajorCities();
+    }
+
+    public List<Country> findAllWithLanguageSortedByPercentage() {
+        return countryRepository.findAllWithLanguageSortedByPercentage();
     }
 }

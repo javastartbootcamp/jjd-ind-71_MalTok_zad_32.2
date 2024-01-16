@@ -2,7 +2,7 @@ package pl.javastart.jpaoptimalization.city;
 
 import pl.javastart.jpaoptimalization.country.Country;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 public class City {
