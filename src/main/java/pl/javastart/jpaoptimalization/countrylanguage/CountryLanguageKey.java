@@ -1,6 +1,6 @@
 package pl.javastart.jpaoptimalization.countrylanguage;
 
-import javax.persistence.Column;
+import jakarta.persistence.Column;
 import java.io.Serializable;
 
 public class CountryLanguageKey implements Serializable {

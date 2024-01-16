@@ -1,6 +1,6 @@
 package pl.javastart.jpaoptimalization.countrylanguage;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @IdClass(CountryLanguageKey.class)

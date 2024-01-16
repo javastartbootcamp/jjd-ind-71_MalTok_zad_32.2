@@ -3,7 +3,7 @@ package pl.javastart.jpaoptimalization.country;
 import pl.javastart.jpaoptimalization.city.City;
 import pl.javastart.jpaoptimalization.countrylanguage.CountryLanguage;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.Collection;
 
 @Entity
@@ -55,11 +55,11 @@ public class Country {
     @Column(name = "Code2")
     private String code2;
 
-    @OrderBy("Population DESC")
+    @OrderBy("population DESC")
     @OneToMany(mappedBy = "country")
     private Collection<City> cities;
 
-    @OrderBy("Percentage DESC")
+    @OrderBy("percentage DESC")
     @OneToMany
     @JoinColumn(name = "countryCode")
     private Collection<CountryLanguage> languages;
